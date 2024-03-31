@@ -46,7 +46,7 @@ async function generateHash() {
     hashHex1 ==
       "cde48537ca2c28084ff560826d0e6388b7c57a51497a6cb56f397289e52ff41b" &&
     hashHex2 ==
-      "f4a85a7509a0a75611ef39490ee09cc3dc1ae2ec47811c4f858a2fed4ae1cb20"
+      "cde48537ca2c28084ff560826d0e6388b7c57a51497a6cb56f397289e52ff41b"
   ) {
     console.log("success");
     window.location.href = "./welcome.html";
