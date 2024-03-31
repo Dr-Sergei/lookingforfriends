@@ -1,0 +1,13 @@
+let out = document.querySelector(".out");
+let sentence = "The world is changed. I feel it in the water. I feel it in the earth.\n I smell it in the air. Much that once was is lost, for none now live who remember it.\n It began with the forging of the Great Rings. Three were given to the Elves, immortal, wisest and fairest of all beings. Seven to the Dwarf-lords, great miners and craftsmen of the mountain halls. And nine, nine rings were gifted to the race of Men, who above all else desire power. For within these rings was bound the strength and will to govern each race. But they were all of them deceived, for another ring was made. In the land of Mordor, in the fires of Mount Doom, the Dark Lord Sauron forged in secret a master ring to control all others. And into this ring, he poured his cruelty, his malice, and his will to dominate all life.\n One Ring to rule them all. One by one, the free lands of Middle-earth fell to the power of the Ring. But there were some who resisted. A last alliance of Men and Elves marched against the armies of Mordor, and on the slopes of Mount Doom, they fought for the freedom of Middle-earth.\n Victory was near, but the power of the ring could not be undone. It was in this moment, when all hope had faded, that Isildur, son of the king, took up his father's sword.\n Sauron, the enemy of the free peoples of Middle-earth, was defeated.\n The Ring passed to Isildur, who had this one chance to destroy evil forever, but the hearts of Men are easily corrupted. And the ring of power has a will of its own. It betrayed Isildur to his death.\n And some things that should not have been forgotten were lost. History became legend. Legend became myth. And for two and a half thousand years, the ring passed out of all knowledge. Until, when chance came, it ensnared a new bearer.\n The Ring came to the creature Gollum, who took it deep into the tunnels of the Misty Mountains. And there, it consumed him. The Ring brought to Gollum unnatural long life. For five hundred years, it poisoned his mind. And in the gloom of Gollum's cave, it waited. Darkness crept back into the forests of the world. Rumor grew of a shadow in the East, whispers of a nameless fear, and the Ring of power perceived its time had come. It abandoned Gollum. But then something happened that the Ring did not intend. It was picked up by the most unlikely creature imaginable.\n A hobbit, Bilbo Baggins of the Shire.\n For the time will soon come when hobbits will shape the fortunes of all.";
+let arr = sentence.split("");
+
+function d3() {
+  for (let i = 0; i < sentence.length; i++) {
+    setTimeout(() => {
+      out.textContent += sentence[i];
+    }, i * 90);
+  }
+}
+
+d3();
